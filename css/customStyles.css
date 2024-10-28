@@ -1,0 +1,30 @@
+.custom-letter-spacing {
+    letter-spacing: 2px;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.borderline {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: none;
+    border-right: none;
+    padding: 100px 0px 100px 0px;
+}
+
+.leftborderbutton {
+    border-top: none;
+    border-bottom: none;
+    border-left: 2px solid black;
+    border-right: none;
+}
+
+.leftborderbutton:hover {
+    border-top: none;
+    border-bottom: none;
+    border-left: 2px solid white;
+    border-right: none;
+    border-radius: 0.75rem;
+}

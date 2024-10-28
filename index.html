@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="css/customStyles.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/svg/favicon.svg"
+      type="image/x-icon"
+    />
+    <title>aperture - Photographer & Filmmaker</title>
+  </head>
+  <body class="font-poppins bg-black text-customWhite">
+    <header>
+      <div
+        class="header-container flex items-center justify-between max-w-7xl mx-auto px-6 py-4"
+      >
+        <div class="logo-name">
+          <img
+            src="assets/img/svg/aperture_logo.svg"
+            alt="aperture"
+            class="h-8"
+          />
+        </div>
+
+        <nav class="nav ml-auto hidden md:flex items-center space-x-6">
+          <ul class="flex space-x-10 text-base font-medium">
+            <li>
+              <a href="#" class="hover:text-customBlack transition-colors"
+                >Business areas</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-customBlack transition-colors"
+                >Featured images</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-customBlack transition-colors"
+                >Gear cage</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-customBlack transition-colors"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <div class="button-get-template ml-10">
+            <button
+              class="bg-white text-customTotalBlack font-medium rounded-xl px-4 py-2 border-2 border-transparent hover:bg-black hover:text-customWhite hover:border-customWhite transition-colors duration-200"
+            >
+              Get template
+            </button>
+          </div>
+        </nav>
+
+        <button
+          id="burger"
+          class="md:hidden text-customWhite focus:outline-none"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="fixed inset-0 bg-black z-50 translate-x-full transition-transform duration-300 ease-in-out"
+      >
+        <div class="flex justify-end p-4">
+          <button id="close-menu" class="text-customWhite">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <ul class="flex flex-col items-center space-y-4 mt-20">
+          <li>
+            <a
+              href="#"
+              class="text-customWhite hover:text-customBlack transition-colors"
+              >Business areas</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-customWhite hover:text-customBlack transition-colors"
+              >Featured images</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-customWhite hover:text-customBlack transition-colors"
+              >Gear cage</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-customWhite hover:text-customBlack transition-colors"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <button
+              class="bg-white text-customTotalBlack font-medium rounded-xl px-4 py-2 border-2 border-transparent hover:bg-black hover:text-customWhite hover:border-customWhite transition-colors duration-200"
+            >
+              Get template
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="container mx-auto">
+      <div class="relative w-full h-full overflow-hidden rounded-lg">
+        <img
+          src="assets/img/png/wallpaper.png"
+          alt="wallpaper"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute bottom-0 left-0 right-0 p-4">
+          <div class="text-customWhite-300 mt-2 max-w-lg mx-auto text-center">
+            <h1
+              class="text-customWhite text-base font-normal custom-letter-spacing custom-letter-spacing"
+            >
+              Photographer & Filmmaker
+            </h1>
+            <p class="text-customWhite text-6xl mt-2">Aperture Studios</p>
+            <p class="text-customWhite text-lg mt-10 max-w-screen-xl mx-auto">
+              Our company specializes in creating unique visual content for
+              photographers and filmmakers. We offer professional photography
+              and videography services, including promotional videos,
+              documentaries, and wedding shoots. Our team of talented
+              specialists uses modern equipment and a creative approach to
+              capture the most important moments of your life and business.
+              Let’s create something amazing together!
+            </p>
+          </div>
+
+          <div
+            class="camera-settings absolute bottom-0 right-0 p-4 flex space-x-4"
+          >
+            <div class="flex items-center">
+              <img src="assets/img/svg/time.svg" alt="time" class="w-6 h-6" />
+              <p class="ml-1">1/2000s</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="assets/img/svg/aperture.svg"
+                alt="aperture"
+                class="w-6 h-6"
+              />
+              <p class="ml-1">f/11</p>
+            </div>
+            <div class="flex items-center">
+              <img src="assets/img/svg/iso.svg" alt="iso" class="w-6 h-6" />
+              <p class="ml-1">100</p>
+            </div>
+            <div class="flex items-center">
+              <img src="assets/img/svg/mark.svg" alt="mark" class="w-6 h-6" />
+              <p class="ml-1">Iceland</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="second-block container mx-auto mt-32">
+      <div class="second-block-text text-center mb-10">
+        <div class="second-block-title">
+          <p class="text-5xl font-bold text-customWhite">What we do.</p>
+        </div>
+        <div class="second-block-desc">
+          <p class="text-customWhite text-2xl mt-6">
+            The areas that we're specialized in.
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-blocks grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="photoblock relative">
+          <img
+            src="assets/img/png/img_1.png"
+            alt="Product Photography"
+            class="w-full h-auto object-cover"
+          />
+          <div class="photo-block-content absolute bottom-0 left-0 w-full p-4">
+            <div class="photo-block-title">
+              <p class="text-customWhite font-semibold text-uppercase custom-letter-spacing">PRODUCT PHOTOGRAPHY</p>
+            </div>
+            <div class="photo-block-text">
+              <p class="text-customWhite">
+                Cras commodo consequat orci, in convallis risus egestas non.
+              </p>
+            </div>
+            <div class="read-more-button mt-2">
+                <button class="bg-white text-customTotalBlack text-xl font-medium rounded-xl px-4 py-2 border-2 border-transparent hover:bg-black hover:text-customWhite border-customWhite transition-colors duration-200">
+                    Read More
+                </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="photoblock relative">
+          <img
+            src="assets/img/png/img_2.png"
+            alt="Architecture Photography"
+            class="w-full h-auto object-cover"
+          />
+          <div class="photo-block-content absolute bottom-0 left-0 w-full p-4">
+            <div class="photo-block-title">
+              <p class="text-customWhite font-semibold text-uppercase custom-letter-spacing">
+                ARCHITECTURE PHOTOGRAPHY
+              </p>
+            </div>
+            <div class="photo-block-text">
+              <p class="text-customWhite">
+                Aenean porta neque eget consequat fringilla.
+              </p>
+            </div>
+            <div class="read-more-button mt-2">
+                <button class="bg-white text-customTotalBlack text-xl font-medium rounded-xl px-4 py-2 border-2 border-transparent hover:bg-black hover:text-customWhite border-customWhite transition-colors duration-200">
+                    Read More
+                </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="photoblock relative">
+          <img
+            src="assets/img/png/img_3.png"
+            alt="Drone Photography"
+            class="w-full h-auto object-cover"
+          />
+          <div class="photo-block-content absolute bottom-0 left-0 w-full p-4">
+            <div class="photo-block-title">
+              <p class="text-customWhite font-semibold text-uppercase custom-letter-spacing">DRONE PHOTOGRAPHY</p>
+            </div>
+            <div class="photo-block-text">
+              <p class="text-customWhite-300">
+                Mauris euismod elit et nisi ultrices, ut faucibus orci
+                tincidunt.
+              </p>
+            </div>
+            <div class="read-more-button mt-2">
+                <button class="bg-white text-customTotalBlack text-xl font-medium rounded-xl px-4 py-2 border-2 border-transparent hover:bg-black hover:text-customWhite border-customWhite transition-colors duration-200">
+                    Read More
+                </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="photoblock relative">
+          <img
+            src="assets/img/png/img_4.png"
+            alt="Wildlife Photography"
+            class="w-full h-auto object-cover"
+          />
+          <div class="photo-block-content absolute bottom-0 left-0 w-full p-4">
+            <div class="photo-block-title">
+              <p class="text-customWhite font-semibold text-uppercase custom-letter-spacing">WILDLIFE PHOTOGRAPHY</p>
+            </div>
+            <div class="photo-block-text">
+              <p class="text-customWhite-300">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div class="read-more-button mt-2">
+                <button class="bg-white text-customTotalBlack text-xl font-medium rounded-xl px-4 py-2 border-2 border-transparent hover:bg-black hover:text-customWhite border-customWhite transition-colors duration-200">
+                    Read More
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <section class="container mx-auto mt-40">
+            <div class="relative w-full h-full overflow-hidden rounded-lb-lt-rt">
+                <img
+                    src="assets/img/png/mount.png"
+                    alt="wallpaper"
+                    class="w-full h-full object-cover"
+                />
+                <div class="absolute top-1/2 right-0 transform -translate-y-1/2 p-4 max-w-lg text-left">
+                    <div class="text-customWhite-300">
+                        <p class="text-customWhite text-2xl text-uppercase">Sun at Mount Fuji</p>
+                        <p class="text-customWhite text-lg mt-4">
+                            Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="camera-settings absolute bottom-0 right-0 p-4 flex space-x-4">
+                    <div class="flex items-center">
+                        <img src="assets/img/svg/time.svg" alt="time" class="w-6 h-6" />
+                        <p class="ml-1 text-white">1"</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="assets/img/svg/aperture.svg" alt="aperture" class="w-6 h-6" />
+                        <p class="ml-1 text-white">f/16</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="assets/img/svg/iso.svg" alt="iso" class="w-6 h-6" />
+                        <p class="ml-1 text-white">400</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="assets/img/svg/mark.svg" alt="mark" class="w-6 h-6" />
+                        <p class="ml-1 text-white">Japan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-between relative w-full h-full overflow-hidden">
+                
+                <div class="flex justify-center">
+                    <div class="text-content md:w-1/2 text-left space-y-4 max-w-2xl">
+                        <p class="text-4xl font-bold text-white">The Gear cage</p>
+                        <p class="text-xl text-text-customWhite">The tools that we use.</p>
+                        <p class="text-customWhite">
+                            The say that "no place is boring if you've had a good night's sleep and have a pocket full of unexposed film". While we don't shoot (a lot) of film these days — these are the tools that we actually use everyday to capture the amazing things around us.
+                        </p>
+                        <button class="bg-white text-customTotalBlack text-xl font-medium rounded-xl px-4 py-2 border-2 border-transparent hover:bg-black hover:text-customWhite hover:border-customWhite transition-colors duration-200">
+                            Check it out
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="image-content md:w-1/2 md:mt-0">
+                    <img src="assets/img/png/cameras.png" alt="Mount Image" class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </section>
+        
+        <section class="container mx-auto">
+            <div class="relative w-full h-full overflow-hidden rounded-lt-lb-rb">
+                <img
+                    src="assets/img/png/liefs.png"
+                    alt="wallpaper"
+                    class="w-full h-full object-cover"
+                />
+                <div class="absolute top-1/2 right-0 transform -translate-y-1/2 p-4 max-w-lg text-left">
+                    <div class="text-customWhite-300">
+                        <p class="text-customWhite text-2xl text-uppercase">Monstera Leafs</p>
+                        <p class="text-customWhite text-lg mt-4">
+                            Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="camera-settings absolute bottom-0 right-0 p-4 flex space-x-4">
+                    <div class="flex items-center">
+                        <img src="assets/img/svg/time.svg" alt="time" class="w-6 h-6" />
+                        <p class="ml-1 text-white">1/400s"</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="assets/img/svg/aperture.svg" alt="aperture" class="w-6 h-6" />
+                        <p class="ml-1 text-white">f/3,5</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="assets/img/svg/iso.svg" alt="iso" class="w-6 h-6" />
+                        <p class="ml-1 text-white">100</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="assets/img/svg/mark.svg" alt="mark" class="w-6 h-6" />
+                        <p class="ml-1 text-white">Costa Rica</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="container mx-auto mt-40 mb-40">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold text-white">Past clients</h2>
+            <p class="text-lg text-text-customWhite mt-2">Trusted by your favourite companies</p>
+        </div>
+    
+        <div class="logo-container mt-16 flex justify-center space-x-8 gap-32">
+            <img src="assets/img/svg/hillhayes.svg" alt="hillhayes" class="logo">
+            <img src="assets/img/svg/riksgransen.svg" alt="riksgransen" class="logo">
+            <img src="assets/img/svg/studiocai.svg" alt="studiocai" class="logo">
+            <img src="assets/img/svg/chillindustries.svg" alt="chillindustries" class="logo">
+            <img src="assets/img/svg/stockholm.svg" alt="stockholm" class="logo">
+        </div>
+    </section>
+
+    <section class="container mx-auto mt-40">
+        <div class="relative w-full h-full overflow-hidden rounded-lb-lt-rt">
+            <img
+                src="assets/img/png/wintermount.png"
+                alt="wallpaper"
+                class="w-full h-full object-cover"
+            />
+            <div class="absolute top-1/2 right-0 transform -translate-y-1/2 p-4 max-w-lg text-left">
+                <div class="text-customWhite-300">
+                    <p class="text-customWhite text-2xl text-uppercase">Star fall in the Himalayas</p>
+                    <p class="text-customWhite text-lg mt-4">
+                        Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="camera-settings absolute bottom-0 right-0 p-4 flex space-x-4">
+                <div class="flex items-center">
+                    <img src="assets/img/svg/time.svg" alt="time" class="w-6 h-6" />
+                    <p class="ml-1 text-white">6"</p>
+                </div>
+                <div class="flex items-center">
+                    <img src="assets/img/svg/aperture.svg" alt="aperture" class="w-6 h-6" />
+                    <p class="ml-1 text-white">f/11</p>
+                </div>
+                <div class="flex items-center">
+                    <img src="assets/img/svg/iso.svg" alt="iso" class="w-6 h-6" />
+                    <p class="ml-1 text-white">800</p>
+                </div>
+                <div class="flex items-center">
+                    <img src="assets/img/svg/mark.svg" alt="mark" class="w-6 h-6" />
+                    <p class="ml-1 text-white">Nepal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto mt-44 mb-44 text-center">
+        <p class="text-4xl font-bold text-white">Need help with photography or videography?</p>
+        <p class="text-lg text-text-customWhite mt-4">
+            We're here for you!
+        </p>
+        <button class="bg-white text-customTotalBlack font-medium rounded-xl px-6 py-3 border-2 border-transparent hover:bg-black hover:text-white hover:border-white transition-colors duration-200 mt-6">
+            Get in touch
+        </button>
+    </section>
+
+    <section class="container mx-auto mt-20 p-6">
+        <div class="flex flex-col md:flex-row justify-between items-start">
+            <div class="flex flex-col items-start mb-6 md:mb-0">
+                <img src="assets/img/svg/aperture_logo.svg" alt="Logo" class="h-12 mb-2">
+                <p class="text-lg text-white">Photographers & videographers capturing the world around us.</p>
+            </div>
+    
+            <div class="flex flex-col md:flex-row md:space-x-10">
+                <div class="business-areas">
+                    <h3 class="text-white text-xl font-bold mb-2">Business areas</h3>
+                    <ul class="text-customWhite space-y-1">
+                        <li>Product Photography</li>
+                        <li>Architecture Photography</li>
+                        <li>Drone Photography</li>
+                        <li>Wildlife Photography</li>
+                    </ul>
+                </div>
+    
+                <div class="pages">
+                    <h3 class="text-white text-xl font-bold mb-2">Pages</h3>
+                    <ul class="text-customWhite space-y-1">
+                        <li>Gear cage</li>
+                        <li>Featured images</li>
+                        <li>Contact</li>
+                        <li>Style guide</li>
+                        <li>Instructions</li>
+                        <li>Changelog</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container mx-auto mt-20 p-6 borderline">
+        <div class="flex flex-col md:flex-row items-start justify-between">
+            <div class="mb-6 md:mb-0 md:w-1/2">
+                <h2 class="text-2xl font-bold text-white">Subscribe to our newsletter</h2>
+                <p class="text-customWhite mt-2">
+                    Read about all the things we do.
+                </p>
+            </div>
+    
+            <div class="md:w-1/2 flex items-center">
+                <div class="relative w-full">
+                    <input 
+                        type="email" 
+                        placeholder="Enter your email address" 
+                        class="w-full h-12 p-4 border border-customWhite rounded-xl focus:outline-none text-customTotalBlack pr-20" 
+                    />
+                    <button class="absolute right-0 top-0 bottom-0 bg-white text-customTotalBlack font-medium rounded-r-md px-4 py-2 border-2 border-transparent hover:bg-black hover:text-customWhite hover:border-customWhite transition-colors duration-200 transform hover:scale-125">
+                        Send
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto mb-32">
+        <div class="flex justify-between items-center mt-10 pt-4">
+            <div class="text-customWhite">
+                <p>© Aperture Photography, Inc. All rights reserved. Licensing</p>
+            </div>
+            
+            <div class="flex space-x-4">
+                <a href="https://twitter.com" target="_blank" class="">
+                    <img src="assets/img/svg/twitter.svg" alt="Twitter" class="w-8 h-8">
+                </a>
+                <a href="https://instagram.com" target="_blank" class="">
+                    <img src="assets/img/svg/inst.svg" alt="Instagram" class="w-8 h-8">
+                </a>
+                <a href="https://facebook.com" target="_blank" class="">
+                    <img src="assets/img/svg/facebook.svg" alt="Facebook" class="w-8 h-8">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
